@@ -66,6 +66,10 @@ function LMcheckCheckbox(){document.querySelectorAll(".gridcheckbox").forEach(fu
 for(var pres=document.querySelectorAll("pre,code"),i=0;i<pres.length;i++)pres[i].addEventListener("dblclick",function(){var e=getSelection(),t=document.createRange();t.selectNodeContents(this),e.removeAllRanges(),e.addRange(t)},!1);
 /*! lazyadsense kompiajaib */ 
 var lazyadsense=!1;window.addEventListener("scroll",function(){(0!=document.documentElement.scrollTop&&!1===lazyadsense||0!=document.body.scrollTop&&!1===lazyadsense)&&(!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}(),lazyadsense=!0)},!0);
+/*! gtag manager */
+var LazyAnalytics=false;window.addEventListener("scroll",function(){(0!=document.documentElement.scrollTop&&false===LazyAnalytics||0!=document.body.scrollTop&&false===LazyAnalytics)&&(!function(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="https://www.googletagmanager.com/gtag/js?id=UA-66906435-3";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}(),LazyAnalytics=true)},true);
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());gtag('config','UA-66906435-3');
 /*! scrollbar */ 
 var bar_bg=document.getElementById("top-scrollbar-bg"),body=document.body,html=document.documentElement;bar_bg.style.minWidth=document.width+"px",document.getElementsByTagName("body")[0].onresize=function(){bar_bg.style.minWidth=document.width+"px"},window.onscroll=function(){var t=document.getElementById("top-scrollbar"),e=(document.documentElement.clientWidth,Math.max(body.scrollHeight,body.offsetHeight,html.clientHeight,html.scrollHeight,html.offsetHeight)),o=window.innerHeight,o=(pageYOffset||(document.documentElement.clientHeight?document.documentElement:document.body).scrollTop)/(e-o)*100;t.style.width=o+"%"};
 /*! lcsn azid */ 
